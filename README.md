@@ -1,6 +1,6 @@
 ## Enable x11 to install MATLAB Product
 
-
+![photo_02](arch.png)
 
 ---
 
@@ -54,7 +54,7 @@ After installation, start the Xming X Server for Windows. You should see an icon
 1. Install the Putty SSH clients on Windows.
 2. Navigate to Connection => SSH => X11 and check the box labeled "Enable X11 forwarding" as shown in the screenshot below:
 
-![photo_01](X11.png)
+![photo_02](X11.png)
 
 3. On the remote X server machine, edit the "/etc/ssh/sshd_config" file and make sure that "X11Forwarding" option is set to "Yes" and that the "X11DisplayOffset" is set to an appropriate value (by default, 10).
 4. Use Putty to connect to the remote machine, and launch the desired GUI application using the command line (e.g. "./install").
